@@ -1,0 +1,25 @@
+ALGORITHM TASK_1
+VAR
+    c := CHAR
+    n := INTEGER
+    a := STRING
+    espace :INTEGER
+    word_count: INTEGER
+    vowel_count: INTEGER
+BEGIN
+    espace=0
+    word_count = 0
+    vowel_count = 0
+    REPEAT
+        a = a + c 
+        read (c) 
+        if
+        IF (c=" ") THEN
+            espace=espace+1
+        END_IF 
+        IF (c='a' or c = 'e' or c = 'y' or c = 'u' or c = 'i' or c = 'o' ) THEN
+            vowel_count=vowel_count+1
+        END_IF 
+    UNTIL c = "."
+    word_count = espace + 1
+END

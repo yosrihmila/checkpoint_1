@@ -1,0 +1,23 @@
+ALGORITHM TASK_2
+VAR
+    S : INTEGER
+    set1 : ARRAY_OF INTEGER[4];
+    set2: ARRAY_OF INTEGER [5]
+BEGIN 
+    Set1 := [3, 1, 7, 9];
+     Set2:= [2, 3, 1, 9, 4];
+    
+
+    FOR i FROM 1 TO 4 STEP 1  DO
+        trouve=false
+        FOR j FROM 1 TO 5 STEP  1  DO
+            
+          
+           IF (set1[i]=set2[j]) THEN
+            trouve=vrai
+           END_IF
+        END_FOR
+        if(trouve=false)
+        s=s+set1[i]
+    END_FOR
+END
