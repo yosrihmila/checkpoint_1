@@ -1,0 +1,18 @@
+FUNCTION dot_product(v1_x, v1_y , v2_x, v2_y : FLOAT) : FLOAT
+VAR
+    ps : FLOAT
+BEGIN
+    (v1 * v2) 
+    RETURN value ; ps
+END
+ALGORITHM orthogonality_check (v1_x, v1_y , v2_x, v2_y : FLOAT) : STRING
+VAR
+    ps : FLOAT
+BEGIN
+    ps := dot_product(v1_x, v1_y, v2_x, v2_y);
+    IF (ps = 0) THEN
+        RETURN : 'v1 and v2 are orthogonal'
+    ELSE 
+        RETURN : 'v1 and v2 are orthogonal'
+    END_IF
+END
