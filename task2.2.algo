@@ -1,0 +1,33 @@
+PROCEDURE echange(VAR xp,yp : INTEGER)
+VAR
+tmp : INTEGER;
+BEGIN
+tmp := xp;
+xp := yp;
+yp := tmp;
+END
+
+PROCEDURE selection_min(VAR tab : ARRAY_OF INTEGER)
+VAR
+i,j,min_idx,n : INTEGER;
+BEGIN
+n := tab.length;
+
+FOR i FROM 0 TO n-2 STEP 1  DO
+    min_idx := i;
+    FOR j  FROM i  TO n-i-2 STEP 1  DO
+        IF (tab[j]<tab[min_idx]) THEN
+            min_idx := j;
+        END_IF
+    END_FOR
+    
+swap(tab[min_idx],tab[i])
+END_FOR
+END
+ALGORITHM trie
+VAR
+tab : ARRAY_OF INTEGER[];
+BEGIN
+    trie(tab)
+    
+END
